@@ -28,6 +28,15 @@ public class JobTest {
     assertEquals("ACME",TJob.getEmployer().getValue());
     assertTrue(TJob.getEmployer() instanceof Employer);
 
+    assertEquals("Desert",TJob.getLocation().getValue());
+    assertTrue(TJob.getLocation() instanceof Location);
+
+    assertEquals("Quality control",TJob.getPositionType().getValue());
+    assertTrue(TJob.getPositionType() instanceof PositionType);
+
+
+
+
   }
 
 
