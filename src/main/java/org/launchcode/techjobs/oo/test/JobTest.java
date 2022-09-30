@@ -34,6 +34,11 @@ public class JobTest {
     assertEquals("Quality control",TJob.getPositionType().getValue());
     assertTrue(TJob.getPositionType() instanceof PositionType);
 
+    assertEquals("Persistence",TJob.getCoreCompetency().getValue());
+    assertTrue(TJob.getCoreCompetency() instanceof CoreCompetency);
+
+
+
 
 
 
