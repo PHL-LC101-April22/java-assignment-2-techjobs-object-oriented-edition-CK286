@@ -97,6 +97,30 @@ public class Job {
     }
     @Override
     public String toString(){
+        if (this.getName().isEmpty()){
+            this.setName("Data not available");
+        }
+
+        if (this.getEmployer().getValue().isEmpty()){
+            this.getEmployer().setValue("Data not available");
+        }
+
+        if (this.getLocation().getValue().isEmpty()){
+            this.getLocation().setValue("Data not available");
+        }
+
+        if (this.getEmployer().getValue().isEmpty()){
+            this.getEmployer().setValue("Data not available");
+        }
+
+        if (this.getPositionType().getValue().isEmpty()){
+            this.getPositionType().setValue("Data not available");
+        }
+
+        if (this.getCoreCompetency().getValue().isEmpty()){
+            this.getCoreCompetency().setValue("Data not available");
+        }
+
 
         return "\n" + "ID: " + this.getId() + "\n" + "Name: " + this.getName() + "\n" + "Employer: " + this.getEmployer() + "\n" + "Location: " + this.getLocation() + "\n" + "Position Type: " + this.getPositionType() + "\n" + "Core Competency: " + this.getCoreCompetency() + "\n";
     }

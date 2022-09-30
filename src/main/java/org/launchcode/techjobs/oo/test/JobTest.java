@@ -58,7 +58,7 @@ public class JobTest {
   public void testToStringContainsCorrectLabelsAndData() {
     Job fieldJob = new Job("Field tester", new Employer("ACME"), new Location("Desert"), new PositionType("Quality control"), new CoreCompetency("Persistence"));
     String fieldStr = fieldJob.toString();
-    //assertTrue(fieldStr.contains(fieldJob.getName()));
+
     String output = String.format("\nID: %d\n" +
                     "Name: %s\n" +
                     "Employer: %s\n" +
