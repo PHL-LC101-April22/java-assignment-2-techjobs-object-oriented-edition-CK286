@@ -30,9 +30,6 @@ public JobField() {
         return Objects.hash(getId());
     }
 
-    public int getId() {
-        return id;
-    }
 
     public String getValue() {
         return value;
@@ -42,5 +39,7 @@ public JobField() {
         this.value = value;
     }
 
-
+    public int getId() {
+        return id;
+    }
 }
